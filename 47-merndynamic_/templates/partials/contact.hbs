@@ -1,0 +1,53 @@
+
+<head>
+    <style>
+        ::placeholder{
+            font-weight: 700 !important;
+            color: black !important;
+        }
+        [type="text"],[type="email"],[type="number"]{
+            font-weight: bold !important;
+            color: black !important;
+            font-size: 20px !important;
+            font-family: cursive !important;
+        }
+        label{
+            font-weight: 700 !important;
+            color: black !important;
+        }
+    </style>
+</head>
+
+<div class="container-fluid mt-5 contact-style" id="contactid">
+    <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+            <h1 class="text-center main-heading">Contact Us</h1>
+            <p class="text-center sub-heading">We will be happy to help you</p>
+            <div class="row">
+                <div class="col-md-6 col-12 mx-auto">
+                        {{!-- 1:14:13  --}}
+                    <form action="/contact" method="POST">
+                        <div class="mb-3 form-group">
+                            <label for="exampleInputEmail1" class="form-label">Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Full Name" name="name">
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" placeholder="Enter Email" name="email">
+                            <strong id="emailHelp" class="form-text">We'll never share your email with anyone else.</strong>
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label class="form-label">Phone</label>
+                            <input type="number" class="form-control" placeholder="Enter Phone No." name="phone">
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label class="form-label">Message</label>
+                            <textarea type="text" class="form-control" row="3" placeholder="Enter Message" name="message"></textarea>
+                        </div>
+                        <button type="submit" class="btn-style btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
